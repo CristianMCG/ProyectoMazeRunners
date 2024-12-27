@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://82vv5uuyahtt"]
+
+[ext_resource type="Texture2D" uid="uid://b8lp5slokq6p8" path="res://StonePavement01a.png" id="1_km8d8"]
+[ext_resource type="Script" path="res://Minero.cs" id="2_o8vh0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c0nmm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_km8d8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Minero" type="AnimatedSprite2D"]
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_c0nmm")
+frame_progress = 0.906714
+script = ExtResource("2_o8vh0")

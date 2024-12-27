@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbp0ecuimomwy"]
+
+[ext_resource type="Texture2D" uid="uid://b1l3u2yrt48if" path="res://icon.svg" id="1_o81ik"]
+[ext_resource type="Script" path="res://Teleporter.cs" id="2_nye4k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e4nc8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o81ik")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Teleporter" type="AnimatedSprite2D"]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_e4nc8")
+script = ExtResource("2_nye4k")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwbsxbnmpefyx"]
+
+[ext_resource type="Script" path="res://YaSeleccionado.cs" id="1_mchom"]
+
+[node name="YaSeleccionado" type="Label"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Esta ficha ya ha sido seleccionada.
+                Selecciona Otra"
+script = ExtResource("1_mchom")
