@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd636yip6aj23"]
+
+[ext_resource type="Script" path="res://Muro.cs" id="1_0wcvf"]
+[ext_resource type="Texture2D" uid="uid://dj2bk17i4u4br" path="res://Crate01a.png" id="2_qpual"]
+
+[node name="Muro" type="StaticBody2D"]
+script = ExtResource("1_0wcvf")
+
+[node name="Imagen" type="Sprite2D" parent="."]
+texture = ExtResource("2_qpual")

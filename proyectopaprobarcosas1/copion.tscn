@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dks6s1ktrmks6"]
+
+[ext_resource type="Script" path="res://Copion.cs" id="1_qd5qc"]
+[ext_resource type="Texture2D" uid="uid://csd4dyd1db364" path="res://Enemy_SlimeAttack01a_1.png" id="1_s8njo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bi4mi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s8njo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Copion" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_bi4mi")
+script = ExtResource("1_qd5qc")

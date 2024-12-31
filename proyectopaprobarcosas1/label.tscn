@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu68vw0g5wfl8"]
+
+[ext_resource type="Script" path="res://Label.cs" id="1_64e86"]
+
+[node name="Label" type="Label"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Seleciona Tus Fichas:
+     Minero
+	     Teletransportador
+     Trampero
+	     Copion
+     Rapido"
+script = ExtResource("1_64e86")

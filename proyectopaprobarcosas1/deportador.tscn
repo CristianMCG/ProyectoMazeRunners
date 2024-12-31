@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://6dk273finr0r"]
+
+[ext_resource type="Texture2D" uid="uid://uxpt4rhhl6ej" path="res://Crate01a_Break_2.png" id="1_thn13"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_02vb4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_thn13")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CSharpScript" id="CSharpScript_2tkv6"]
+script/source = "using Godot;
+using System;
+
+public partial class Deportador : AnimatedSprite2D
+{
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+	}
+}
+"
+
+[node name="Deportador" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_02vb4")
+script = SubResource("CSharpScript_2tkv6")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://pmo4tjr1cn20"]
+
+[ext_resource type="Script" path="res://Trampero.cs" id="1_8us5y"]
+[ext_resource type="Texture2D" uid="uid://dj58db2me4wfb" path="res://Crate01a_Break_9.png" id="1_8xo5g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6kjnc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8xo5g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Trampero" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_6kjnc")
+script = ExtResource("1_8us5y")
